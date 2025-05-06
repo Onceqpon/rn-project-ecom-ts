@@ -14,7 +14,7 @@ const Grid = () => {
     const fetchData = async (): Promise<store[]> => {
       try {
         const response: AxiosResponse<store[]> = await axios.get<store[]>(
-          "https://my-json-server.typicode.com/Onceqpon/rn-project-ecom-ts/products"
+          "https://my-json-server.typicode.com/Onceqpon/rn-project-ecom-ts/product"
         );
         setData(response.data);
         return response.data;
