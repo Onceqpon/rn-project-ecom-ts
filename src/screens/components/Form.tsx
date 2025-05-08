@@ -9,6 +9,7 @@ import Checkbox from "expo-checkbox";
 import Input from "./Input";
 import Button from "./Button";
 import styles from "./styles/Form";
+import { useUser } from "../../../api/UserContext"; // Importujemy hook do użytkownika
 
 const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
   // DEFINE STATES FOR INPUT FIELDS
@@ -23,6 +24,8 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
   const [isUsernameValid, setIsUsernameValid] = React.useState<boolean>(true);
   const [isPasswordValid, setIsPasswordValid] = React.useState<boolean>(true);
   const [isTermsValid, setIsTermsValid] = React.useState<boolean>(true);
+  
+  const { setUserName } = useUser(); // Używamy hooka do aktualizacji nazwy użytkownika
 
   const navigation: HomeScreenNavigationProp = useNavigation();
 
@@ -80,18 +83,21 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
           const data = await response.json();
 
           if (data.id) {
-
+            // Po rejestracji, ustawiamy nazwę użytkownika w kontekście
+            setUserName(username);
             navigation.navigate("Home");
           } else {
             alert("Błąd podczas rejestracji. Spróbuj ponownie.");
           }
         } else {
-
+          // LOGOWANIE
           const response = await fetch('https://my-json-server.typicode.com/Onceqpon/rn-project-ecom-ts/users');
           const data = await response.json();
           const user = data.find((user: { email: string; password: string }) => user.email === email && user.password === password);
 
           if (user) {
+            // Po udanym logowaniu, ustawiamy nazwę użytkownika w kontekście
+            setUserName(user.username);
             navigation.navigate("Home");
           } else {
             setIsEmailValid(false);
