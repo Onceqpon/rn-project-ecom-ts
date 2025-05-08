@@ -15,4 +15,5 @@ export const icons = {
     username: require("./Images/username.png"),
     startFull: require("./Images/starFull.png"),
     StartHalf: require("./Images/starHalf.png"),
+    category: require("./Images/categories.png"),
   };

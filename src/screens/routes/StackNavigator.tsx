@@ -17,7 +17,6 @@ import fetchFonts from "../../../assets/fonts/fonts";
 import BottomTabsNavigator from "./BottomTabNavigator";
 import { icons } from "../../assets/icons";
 
-
 const AddRoutes = () => {
   const [loaded, setLoaded] = React.useState<boolean>(false);
 
@@ -78,35 +77,29 @@ const AddRoutes = () => {
         {/* DETAILS SCREEN */}
         <Stack.Screen
           name="Details_Screen"
-          
           options={({ navigation }) => ({
             headerTitle: "",
             headerStyle: {
               backgroundColor: "#282729",
               shadowColor: "transparent",
             },
-            headerRight: () => (
-              <View style={{ marginTop: 55, marginRight: 30 }}>
-                <Cart />
-              </View>
-            ),
             
             headerLeft: () => (
               <TouchableOpacity
-              onPress={() => {
-                navigation.goBack();
-              }}
+                onPress={() => {
+                  navigation.goBack();
+                }}
               >
                 <Image
                   source={icons.arrow}
                   style={{
-                    width: 30,
-                    height: 30,
-                    marginLeft: 30,
-                    marginTop: 40,
+                    width: 40,
+                    height: 40,
+                    marginLeft: 20,
+                    marginTop: 130,
                   }}
                   resizeMode="contain"
-                  />
+                />
               </TouchableOpacity>
             ),
             headerBackTitleVisible: false,
@@ -120,6 +113,7 @@ const AddRoutes = () => {
           name="Home"
           component={BottomTabsNavigator}
         />
+
       </Stack.Navigator>
     </>
   );

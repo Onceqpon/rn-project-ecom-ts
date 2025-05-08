@@ -32,14 +32,14 @@ const SignUp_Screen = () => {
 
             <View style={styles.forms}>
               {/* SIGN UP FORM */}
-              <Form isSignUpPage={true} text_button="CREATE ACCOUNT" />
+              <Form isSignUpPage={true} text_button="UTWÓRZ KONTO" />
             </View>
           </View>
 
           <Footer
             signUp={true}
-            first_footer_text="Already have an account?"
-            second_footer_text="Sign In"
+            first_footer_text="Masz już konto?"
+            second_footer_text="Zaloguj się"
           />
         </ScrollView>
       </KeyboardAvoidingView>

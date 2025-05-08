@@ -75,6 +75,11 @@ interface CardProps {
     username: string;
     password: string;
   }
+
+  interface CategoryProps {
+    id: string;
+    title: string;
+  }
   
   
   export {
@@ -88,4 +93,5 @@ interface CardProps {
     ProductContex,
     CartContextData,
     User,
+    CategoryProps,
   };

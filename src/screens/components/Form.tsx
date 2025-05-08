@@ -126,30 +126,30 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
         color={isEmailValid ? "#656262" : "#FF4B4B"}
         keyboardType="email-address"
       />
-      {show_error(isEmailValid, "Please enter a valid email address.", false)}
+      {show_error(isEmailValid, "Proszę podać poprawny adres email", false)}
 
       {/* USERNAME INPUT */}
       {isSignUpPage ? (
         <Input
-          placeholder="username"
+          placeholder="Login"
           icon={icons.username}
           value={username}
           onChangeText={setUsername}
           color={isUsernameValid ? "#656262" : "#FF4B4B"}
         />
       ) : null}
-      {show_error(isUsernameValid, "Please enter a valid username.", false)}
+      {show_error(isUsernameValid, "Proszę podać prawidłowy login", false)}
 
       {/* PASSWORD INPUT */}
       <Input
-        placeholder="Your password"
+        placeholder="Twoje hasło"
         icon={icons.password}
         value={password}
         onChangeText={setPassword}
         color={isPasswordValid ? "#656262" : "#FF4B4B"}
         secureTextEntry={true}
       />
-      {show_error(isPasswordValid, "Please enter a valid password.", false)}
+      {show_error(isPasswordValid, "Proszę podać prawidłowe hasło", false)}
 
       {/* CHECKBOX INPUT */}
       {isSignUpPage ? (
@@ -161,7 +161,7 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
             onValueChange={setChecked}
           />
           <Text style={styles.terms}>
-            Agree To <Text style={styles.underline}>Terms And Conditions</Text>
+            Wyrażam Zgodę Na <Text style={styles.underline}>Regulamin Sklepu</Text>
           </Text>
         </View>
       ) : null}

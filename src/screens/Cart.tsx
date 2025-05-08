@@ -33,8 +33,8 @@ const Cart = () => {
   const renderEmptyCart = () => {
     return (
       <View style={styles.container}>
-        <Text style={styles.textContainer}>Ops, Empty Cart :(</Text>
-        <Text style={styles.subTextContainer}>Add a product</Text>
+        <Text style={styles.textContainer}>Twój Koszyk Jest Pusty</Text>
+        <Text style={styles.subTextContainer}>Dodaj Produkt</Text>
       </View>
     );
   };
@@ -73,19 +73,19 @@ const Cart = () => {
   return (
     <View style={styles.viewPort}>
       <View style={styles.header}>
-        <Text style={styles.text}>Total</Text>
-        <Text style={styles.textCount}>R$ {getTotalPrice().toFixed(2)}</Text>
+        <Text style={styles.text}>Razem</Text>
+        <Text style={styles.textCount}>PLN {getTotalPrice().toFixed(2)}</Text>
       </View>
       {isCartEmpty ? renderEmptyCart() : renderFlatList()}
       <CustomModal
-        header="Good!"
-        message="Product successfully purchased."
+        header="Sukces"
+        message="Zamówienie zostało złożone pomyślnie!"
         onClose={() => closeModal()}
         visible={modalVisible}
       />
       <View style={styles.footerButton}>
         <ButtonBuy
-          children="BUY"
+          children="KUP TERAZ"
           onPress={() => openModal()}
           isloading={isLoading}
           quantity={cartItems.length}

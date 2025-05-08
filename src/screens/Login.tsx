@@ -21,18 +21,18 @@ const Login_Screen = () => {
     >
       <View style={{ height: windowHeight }}>
         {/* WELCOME TITLE */}
-        <Text style={styles.title}>WELCOME</Text>
+        <Text style={styles.title}>Witaj</Text>
 
         <View style={[styles.inputs]}>
           {/* LOGIN FORM */}
-          <Form isSignUpPage={false} text_button="LOGIN" />
+          <Form isSignUpPage={false} text_button="ZALOGUJ" />
         </View>
       </View>
 
       <Footer
         signUp={false}
-        first_footer_text="Don't have an account?"
-        second_footer_text="Sign Up"
+        first_footer_text="Nie masz jeszcze konta?"
+        second_footer_text="Zarejestruj się"
       />
     </KeyboardAvoidingView>
   );

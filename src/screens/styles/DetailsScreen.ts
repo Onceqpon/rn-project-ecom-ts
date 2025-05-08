@@ -60,7 +60,7 @@ export const styles = StyleSheet.create({
     marginTop: -5,
   },
   quantity: {
-    fontSize: 10,
+    fontSize: 35,
     paddingHorizontal: 8,
     color: GlobalStyles.Colors.primary,
   },

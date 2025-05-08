@@ -87,6 +87,7 @@ type NavigationProp = WelcomeScreenNavigationProp | SignUpScreenNavigationProp;
 
 type CartScreenNavigator = StackNavigationProp<ParamListBase, "Cart_Screen">;
 
+
 export type {
   ButtonProps,
   ButtonBuyProps,
@@ -102,5 +103,5 @@ export type {
   NavigationProp,
   HomeScreenNavigationProp,
   FavoritesContextType,
-  ProviderProps
+  ProviderProps,
 };

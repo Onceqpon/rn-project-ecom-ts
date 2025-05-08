@@ -97,8 +97,8 @@ const ProductScreen: React.FC<ProductScreenProps> = ({ route }) => {
   return (
     <View style={styles.container}>
       <CustomModal
-        header="Good!"
-        message="Product added to cart."
+        header="Super"
+        message="Dodano do koszyka"
         onClose={() => closeModal()}
         visible={modalVisible}
       />
@@ -138,7 +138,7 @@ const ProductScreen: React.FC<ProductScreenProps> = ({ route }) => {
         <View style={styles.bottoncentralization}>
           <ButtonBuy
             onPress={handleAddToCart}
-            children="ADD TO CART"
+            children="DO KOSZYKA"
             isloading={isLoading}
             quantity={quantity}
           />

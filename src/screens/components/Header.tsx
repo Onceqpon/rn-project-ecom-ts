@@ -11,7 +11,7 @@ const Header = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.headerLeft}>
-          <Text style={styles.welcome}>Welcome</Text>
+          <Text style={styles.welcome}>Cześć,</Text>
           <Text style={styles.name}>{userName ? userName : "Guest"}</Text>
           <View style={styles.line}></View>
         </View>
