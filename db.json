@@ -29,7 +29,7 @@
       "title": "Kurtka puchowa damska z kapturem",
       "price": 199.99,
       "description": "Ciepła i stylowa kurtka puchowa, idealna na zimowe dni. Posiada kaptur, kieszenie na zamek i jest dostępna w kilku kolorach.",
-      "category": "odzież damska",
+      "category": "Odzież Damska",
       "image": "https://brendi.pl/hpeciai/d55b49fcb9e067f67a1e3d9ad90567d3/pol_il_Damska-Kurtka-Pikowana-Julita-Bezowa-8229.jpg",
       "rating": {
         "rate": 4.3,
@@ -136,8 +136,8 @@
       "password": "janek123"
     }
   ],
-  
-   "categories": [
+
+  "categories": [
     {
       "id": 1,
       "category": "AGD"
