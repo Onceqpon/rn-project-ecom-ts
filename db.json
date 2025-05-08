@@ -121,4 +121,22 @@
       }
     }
   ]
+
+  {
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "username": "Admin",
+      "password": "Admin"
+    },
+    {
+      "id": 2,
+      "email": "jankowalski@gmail.com",
+      "username": "Janek",
+      "password": "janek123"
+    }
+  ]
+}
+
 }
