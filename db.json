@@ -135,5 +135,35 @@
       "username": "Janek",
       "password": "janek123"
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "category": "AGD",
+    },
+    {
+      "id": 2,
+      "category": "Uroda",
+    },
+    {
+      "id": 1,
+      "category": "Dom i Ogród",
+    },
+    {
+      "id": 2,
+      "category": "Elektronika",
+    },
+    {
+      "id": 2,
+      "category": "Sport",
+    },
+    {
+      "id": 2,
+      "category": "Akcesoria",
+    },
+    {
+      "id": 2,
+      "category": "Odzież Damska",
+    },
   ]
 }
