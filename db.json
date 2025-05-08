@@ -1,127 +1,124 @@
 {
-    "product": [
-        [
-          {
-            "id": 1,
-            "title": "Lampa LED biurkowa z dotykowym włącznikiem",
-            "price": 49.99,
-            "description": "Nowoczesna lampa LED z regulacją jasności, idealna do biura lub pokoju. Dzięki dotykowemu włącznikowi, łatwo dostosujesz ją do swoich potrzeb.",
-            "category": "elektronika",
-            "image": "https://www.apdmarket.pl/214006-home_default/lampka-biurkowa-led-solo-biala-z-wlacznikiem-dotykowym.jpg",
-            "rating": {
-              "rate": 4.5,
-              "count": 100
-            }
-          },
-          {
-            "id": 2,
-            "title": "Słuchawki bezprzewodowe Bluetooth",
-            "price": 129.99,
-            "description": "Słuchawki Bluetooth z dźwiękiem wysokiej jakości i wygodnym dopasowaniem. Doskonałe do słuchania muzyki i prowadzenia rozmów.",
-            "category": "elektronika",
-            "image": "https://music99.pl/hpeciai/1f20939418af40f6f2525a43f36adf99/pol_pl_Sluchawki-bezprzewodowe-BT-ANC-ANC110-Audizio-3166_1.jpg",
-            "rating": {
-              "rate": 4.7,
-              "count": 200
-            }
-          },
-          {
-            "id": 3,
-            "title": "Kurtka puchowa damska z kapturem",
-            "price": 199.99,
-            "description": "Ciepła i stylowa kurtka puchowa, idealna na zimowe dni. Posiada kaptur, kieszenie na zamek i jest dostępna w kilku kolorach.",
-            "category": "odzież damska",
-            "image": "https://brendi.pl/hpeciai/d55b49fcb9e067f67a1e3d9ad90567d3/pol_il_Damska-Kurtka-Pikowana-Julita-Bezowa-8229.jpg",
-            "rating": {
-              "rate": 4.3,
-              "count": 150
-            }
-          },
-          {
-            "id": 4,
-            "title": "Torba na laptopa z ekoskóry",
-            "price": 89.99,
-            "description": "Elegancka torba na laptopa wykonana z wysokiej jakości ekoskóry. Posiada dodatkową kieszeń na akcesoria oraz regulowany pasek.",
-            "category": "akcesoria",
-            "image": "https://puccini.pl/media/catalog/product/1/_/1_BLXP0056L_2_szare_4e17.jpg",
-            "rating": {
-              "rate": 4.1,
-              "count": 80
-            }
-          },
-          {
-            "id": 5,
-            "title": "Rower górski 27.5 cali",
-            "price": 799.99,
-            "description": "Solidny rower górski o dużych kołach 27.5 cala, idealny do jazdy po nierównych nawierzchniach. Wykonany z lekkiego aluminium, z systemem amortyzacji.",
-            "category": "sport",
-            "image": "https://kimet.pl/hpeciai/4dd99290f3e29b014a3b846835b291ba/pol_pl_Rower-27-5-MTB-MRace-rama-17-5-Shimano-206_1.jpg",
-            "rating": {
-              "rate": 4.4,
-              "count": 60
-            }
-          },
-          {
-            "id": 6,
-            "title": "Smartwatch z monitorem tętna",
-            "price": 199.99,
-            "description": "Smartwatch z funkcją monitorowania tętna, liczby kroków i jakości snu. Doskonały wybór dla osób aktywnych fizycznie.",
-            "category": "elektronika",
-            "image": "https://m.media-amazon.com/images/I/6170yBRinZL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
-            "rating": {
-              "rate": 4.2,
-              "count": 150
-            }
-          },
-          {
-            "id": 7,
-            "title": "Zestaw filiżanek do herbaty",
-            "price": 45.99,
-            "description": "Elegancki zestaw filiżanek do herbaty, wykonany z porcelany. Idealny do codziennego użytku lub na specjalne okazje.",
-            "category": "dom i ogród",
-            "image": "https://lekkistyl.pl/19382-large_default/tognana-graphic-komplet-6-filizanek-z-podstawkami-tea-200-cc.jpg",
-            "rating": {
-              "rate": 4.6,
-              "count": 120
-            }
-          },
-          {
-            "id": 8,
-            "title": "Wielofunkcyjny robot kuchenny",
-            "price": 299.99,
-            "description": "Robot kuchenny z wieloma funkcjami, w tym blendowaniem, siekaniem i ubijaniem. Doskonały do przygotowywania różnorodnych potraw.",
-            "category": "AGD",
-            "image": "https://www.koliber24.pl/userdata/public/gfx/1266/8A_amz.jpg",
-            "rating": {
-              "rate": 4.8,
-              "count": 200
-            }
-          },
-          {
-            "id": 9,
-            "title": "Suszarka do włosów z jonizacją",
-            "price": 69.99,
-            "description": "Suszarka do włosów z funkcją jonizacji, zapewniająca szybsze suszenie i zdrowsze włosy. Posiada regulację temperatury i prędkości.",
-            "category": "uroda",
-            "image": "https://menland.pl/img/product_media/11001-12000/levante.jpg",
-            "rating": {
-              "rate": 4.3,
-              "count": 150
-            }
-          },
-          {
-            "id": 10,
-            "title": "Lodówka z funkcją szybkiego chłodzenia",
-            "price": 1299.99,
-            "description": "Lodówka z nowoczesną funkcją szybkiego chłodzenia, idealna do małych mieszkań i biur. Wysokiej jakości materiał i oszczędność energii.",
-            "category": "AGD",
-            "image": "https://i.erli.pl/e5uvyz.fa2cf3.l.jpg",
-            "rating": {
-              "rate": 4.5,
-              "count": 75
-            }
-  }
-]
-
-    ]
+  "product": [
+    {
+      "id": 1,
+      "title": "Lampa LED biurkowa z dotykowym włącznikiem",
+      "price": 49.99,
+      "description": "Nowoczesna lampa LED z regulacją jasności, idealna do biura lub pokoju. Dzięki dotykowemu włącznikowi, łatwo dostosujesz ją do swoich potrzeb.",
+      "category": "elektronika",
+      "image": "https://www.apdmarket.pl/214006-home_default/lampka-biurkowa-led-solo-biala-z-wlacznikiem-dotykowym.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 100
+      }
+    },
+    {
+      "id": 2,
+      "title": "Słuchawki bezprzewodowe Bluetooth",
+      "price": 129.99,
+      "description": "Słuchawki Bluetooth z dźwiękiem wysokiej jakości i wygodnym dopasowaniem. Doskonałe do słuchania muzyki i prowadzenia rozmów.",
+      "category": "elektronika",
+      "image": "https://music99.pl/hpeciai/1f20939418af40f6f2525a43f36adf99/pol_pl_Sluchawki-bezprzewodowe-BT-ANC-ANC110-Audizio-3166_1.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 200
+      }
+    },
+    {
+      "id": 3,
+      "title": "Kurtka puchowa damska z kapturem",
+      "price": 199.99,
+      "description": "Ciepła i stylowa kurtka puchowa, idealna na zimowe dni. Posiada kaptur, kieszenie na zamek i jest dostępna w kilku kolorach.",
+      "category": "odzież damska",
+      "image": "https://brendi.pl/hpeciai/d55b49fcb9e067f67a1e3d9ad90567d3/pol_il_Damska-Kurtka-Pikowana-Julita-Bezowa-8229.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 150
+      }
+    },
+    {
+      "id": 4,
+      "title": "Torba na laptopa z ekoskóry",
+      "price": 89.99,
+      "description": "Elegancka torba na laptopa wykonana z wysokiej jakości ekoskóry. Posiada dodatkową kieszeń na akcesoria oraz regulowany pasek.",
+      "category": "akcesoria",
+      "image": "https://puccini.pl/media/catalog/product/1/_/1_BLXP0056L_2_szare_4e17.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 80
+      }
+    },
+    {
+      "id": 5,
+      "title": "Rower górski 27.5 cali",
+      "price": 799.99,
+      "description": "Solidny rower górski o dużych kołach 27.5 cala, idealny do jazdy po nierównych nawierzchniach. Wykonany z lekkiego aluminium, z systemem amortyzacji.",
+      "category": "sport",
+      "image": "https://kimet.pl/hpeciai/4dd99290f3e29b014a3b846835b291ba/pol_pl_Rower-27-5-MTB-MRace-rama-17-5-Shimano-206_1.jpg",
+      "rating": {
+        "rate": 4.4,
+        "count": 60
+      }
+    },
+    {
+      "id": 6,
+      "title": "Smartwatch z monitorem tętna",
+      "price": 199.99,
+      "description": "Smartwatch z funkcją monitorowania tętna, liczby kroków i jakości snu. Doskonały wybór dla osób aktywnych fizycznie.",
+      "category": "elektronika",
+      "image": "https://m.media-amazon.com/images/I/6170yBRinZL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 150
+      }
+    },
+    {
+      "id": 7,
+      "title": "Zestaw filiżanek do herbaty",
+      "price": 45.99,
+      "description": "Elegancki zestaw filiżanek do herbaty, wykonany z porcelany. Idealny do codziennego użytku lub na specjalne okazje.",
+      "category": "dom i ogród",
+      "image": "https://lekkistyl.pl/19382-large_default/tognana-graphic-komplet-6-filizanek-z-podstawkami-tea-200-cc.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 120
+      }
+    },
+    {
+      "id": 8,
+      "title": "Wielofunkcyjny robot kuchenny",
+      "price": 299.99,
+      "description": "Robot kuchenny z wieloma funkcjami, w tym blendowaniem, siekaniem i ubijaniem. Doskonały do przygotowywania różnorodnych potraw.",
+      "category": "AGD",
+      "image": "https://www.koliber24.pl/userdata/public/gfx/1266/8A_amz.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 200
+      }
+    },
+    {
+      "id": 9,
+      "title": "Suszarka do włosów z jonizacją",
+      "price": 69.99,
+      "description": "Suszarka do włosów z funkcją jonizacji, zapewniająca szybsze suszenie i zdrowsze włosy. Posiada regulację temperatury i prędkości.",
+      "category": "uroda",
+      "image": "https://menland.pl/img/product_media/11001-12000/levante.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 150
+      }
+    },
+    {
+      "id": 10,
+      "title": "Lodówka z funkcją szybkiego chłodzenia",
+      "price": 1299.99,
+      "description": "Lodówka z nowoczesną funkcją szybkiego chłodzenia, idealna do małych mieszkań i biur. Wysokiej jakości materiał i oszczędność energii.",
+      "category": "AGD",
+      "image": "https://i.erli.pl/e5uvyz.fa2cf3.l.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 75
+      }
+    }
+  ]
 }
