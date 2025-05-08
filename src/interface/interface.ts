@@ -68,6 +68,13 @@ interface CardProps {
     getTotalItemCount: () => number;
     getTotalPrice: () => number;
   }
+
+  interface User {
+    id: number;
+    email: string;
+    username: string;
+    password: string;
+  }
   
   
   export {
@@ -79,5 +86,6 @@ interface CardProps {
     FavoriteProps,
     CartItem,
     ProductContex,
-    CartContextData
+    CartContextData,
+    User,
   };

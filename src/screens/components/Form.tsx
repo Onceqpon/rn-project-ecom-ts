@@ -1,10 +1,9 @@
 import React from "react";
-
 import { View, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { show_error } from "./checkingscreen/ValidateInputsForm";
 import { FormProps } from "../../types/types";
-import {icons} from "../../assets/icons"
+import { icons } from "../../assets/icons";
 import { HomeScreenNavigationProp } from "../../types/types";
 import Checkbox from "expo-checkbox";
 import Input from "./Input";
@@ -25,7 +24,6 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
   const [isPasswordValid, setIsPasswordValid] = React.useState<boolean>(true);
   const [isTermsValid, setIsTermsValid] = React.useState<boolean>(true);
 
-
   const navigation: HomeScreenNavigationProp = useNavigation();
 
   // HANDLE ERRORS IF THE USERS DOES NOT FILL IN ANY FIELDS
@@ -42,7 +40,6 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
       setIsPasswordValid(true);
     }
 
-    //  IF THE USER IS ON THE SIGN UP PAGE, CHECK IF THE USERNAME AND TERMS ARE FILLED IN
     if (isSignUpPage) {
       if (username === "") {
         setIsUsernameValid(false);
@@ -57,33 +54,56 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
     }
   };
 
-  // HANDLE NAVIGATION TO THE NEXT SCREEN
-  const handleNavigation = () => {
-    // CHECK IF THE USER FILLED IN ALL THE FIELDS
-    if (
-      email.trim().length > 0 &&
-      password.trim().length > 0 &&
-      (isSignUpPage ? username.trim().length > 0 : true) &&
-      (isSignUpPage ? isChecked : true)
-    ) {
+  // HANDLE NAVIGATION TO THE NEXT SCREEN (LOGIN/REGISTRATION API CALL)
+  const handleNavigation = async () => {
+    if (email.trim().length > 0 && password.trim().length > 0) {
       setIsEmailValid(true);
       setIsPasswordValid(true);
-      setIsUsernameValid(true);
-      setIsTermsValid(true);
 
       setIsLoading(true);
 
-      // SET A TIMEOUT TO SIMULATE A LOADING SCREEN
-      setTimeout(() => {
-        setIsLoading(false);
-
-        // NAVIGATE TO THE NEXT SCREEN BASED ON THE PROPS
+      try {
         if (isSignUpPage) {
-          navigation.navigate("Home");
+          // PRZYKŁADOWA REJESTRACJA {JSON} Placeholder API NIE OBSŁUGUJE REJESTRACJI
+          const response = await fetch('https://my-json-server.typicode.com/Onceqpon/rn-project-ecom-ts/users', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              email,
+              username,
+              password,
+            }),
+          });
+          
+          const data = await response.json();
+
+          if (data.id) {
+
+            navigation.navigate("Home");
+          } else {
+            alert("Błąd podczas rejestracji. Spróbuj ponownie.");
+          }
         } else {
-          navigation.navigate("Home");
+
+          const response = await fetch('https://my-json-server.typicode.com/Onceqpon/rn-project-ecom-ts/users');
+          const data = await response.json();
+          const user = data.find((user: { email: string; password: string }) => user.email === email && user.password === password);
+
+          if (user) {
+            navigation.navigate("Home");
+          } else {
+            setIsEmailValid(false);
+            setIsPasswordValid(false);
+            alert("Niepoprawne dane logowania");
+          }
         }
-      }, 500);
+      } catch (error) {
+        alert("Wystąpił błąd. Spróbuj ponownie.");
+      } finally {
+        setIsLoading(false);
+      }
     } else {
       handleError();
     }
@@ -103,7 +123,6 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
       {show_error(isEmailValid, "Please enter a valid email address.", false)}
 
       {/* USERNAME INPUT */}
-      {/* IF THE USER IS ON THE SIGN UP PAGE, SHOW THE USERNAME INPUT */}
       {isSignUpPage ? (
         <Input
           placeholder="username"
@@ -127,7 +146,6 @@ const Form: React.FC<FormProps> = ({ isSignUpPage, text_button }) => {
       {show_error(isPasswordValid, "Please enter a valid password.", false)}
 
       {/* CHECKBOX INPUT */}
-      {/* IF THE USER IS ON THE SIGN UP PAGE, SHOW THE CHECKBOX INPUT */}
       {isSignUpPage ? (
         <View style={styles.checkbox_container}>
           <Checkbox

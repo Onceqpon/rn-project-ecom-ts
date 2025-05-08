@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <Header />
-      {/* GRID COMPONENT */}
+      {}
 
       <ScrollView>
         <Grid />

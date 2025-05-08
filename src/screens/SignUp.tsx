@@ -31,7 +31,7 @@ const SignUp_Screen = () => {
             <Text style={styles.title}>SIGN UP</Text>
 
             <View style={styles.forms}>
-              {/* LOGIN FORM */}
+              {/* SIGN UP FORM */}
               <Form isSignUpPage={true} text_button="CREATE ACCOUNT" />
             </View>
           </View>
