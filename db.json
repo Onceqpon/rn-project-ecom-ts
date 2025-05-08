@@ -140,7 +140,7 @@
   "categories": [
     {
       "id": 1,
-      "category": "AGD"
+      "category": "Wszystko"
     },
     {
       "id": 2,
@@ -165,6 +165,10 @@
     {
       "id": 7,
       "category": "Odzież Damska"
-    }
+    },
+    {
+      "id": 1,
+      "category": "AGD"
+    },
   ]
 }
