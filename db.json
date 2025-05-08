@@ -136,6 +136,7 @@
       "password": "janek123"
     }
   ],
+  
   "categories": [
     {
       "id": 1,
@@ -164,6 +165,6 @@
     {
       "id": 2,
       "category": "Odzież Damska",
-    },
+    }
   ]
 }
