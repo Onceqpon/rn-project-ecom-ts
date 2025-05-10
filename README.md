@@ -37,6 +37,24 @@ mobilne i pozwala użytkownikowi przeglądać produkty, dodawać je do koszyka o
 ![Zrzut ekranu 2025-05-08 221001](https://github.com/user-attachments/assets/2061b85b-ddfe-44d7-908c-be68607424bd)
 ![Zrzut ekranu 2025-05-08 221416](https://github.com/user-attachments/assets/1d9ddd6a-9dd6-4c34-b3ce-72351370c5be)
 
+**Przykładowi użytkownicy:
+```bash
+"users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "username": "Admin",
+      "password": "Admin"
+    },
+    {
+      "id": 2,
+      "email": "jankowalski@gmail.com",
+      "username": "Janek",
+      "password": "janek123"
+    }
+  ],
+```
+
      
 ## Technologie:
 
